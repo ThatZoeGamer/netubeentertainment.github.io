@@ -1,17 +1,17 @@
 function check(form)
 {
- 
- if(form.userid.value == "guest user" && form.pswrd.value == "1")
+
+ if(form.userid.value == "" && form.pswrd.value == "")
   {
-    window.open('\ihulerihjzdfihulhuilfdihulbhjdzghiulhiugfd.html')
+    window.open('')
   }
-  else if(form.userid.value == "Betatester" && form.pswrd.value == "Betatestingisthebest654321$$$$$$")
+  else if(form.userid.value == "" && form.pswrd.value == "")
   {
-    window.open('\khjfshuisfhujfrhuildsfhuisfhuidfihuldfsa.html')
+    window.open('')
   }
- else if(form.userid.value == "georgethecool" && form.pswrd.value == "georgeisthebest123")
+ else if(form.userid.value == "" && form.pswrd.value == "")
   {
-    window.open('\hdfhdfkhdgkhjdiaegoiuaeruoipaer.html')
+    window.open('')
   }
  else
  {
@@ -21,5 +21,13 @@ function check(form)
   text: 'You have entered the wrong username/password, if you think this is a mistake, contact support',
   footer: ''
 })
+  }
+}
+function myFunction() {
+  var x = document.getElementById("myInput");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
   }
 }
