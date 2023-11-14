@@ -1,59 +1,67 @@
 <!DOCTYPE html>
-<html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>NTE ID - Login</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<html>
+  <head>
+    <title>NTE ID - Login</title>
+    <link rel="stylesheet" href="\loginstyle.css">
+    <link rel="shortcut icon" href="\guest.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+  </head>
+  <body>
+      <div id="main-wrapper" class="fancy-scrollbar">
+        <div id="main">
+          <div id="login-screen">
+            <div id="nav">
+              <a class="nav-logo" href="#">
+                <i class="fa fa-home"></i>
+              </a>
+            </div>
+            <div id="login-form-wrapper">
+              <img src="\NTE1.png" alt="" />
+              <form name="login-form">
+              <div id="login-form">
+                <input class="dashed" type="text" placeholder="Username" name="userid"/>
+                <input type="password" class="dashed" placeholder="Password" name="pswrd" id="myInput"/>
+                
+              <input type="button" class="login-button" type="checkbox" onclick="myFunction()" value="Show Password"></input>
+                <input onclick="check(this.form)" class="login-button" value="Log In" type="button"></input>
+                </form>
+                <div class="alternate-options">
+                  <a href="#" class="sign-up-button" type="button">Sign up</a>
+                  <span class="dot">·</span>
+                  <a href="#" class="need-help-button" type="button">Support</a>
+                </div>
+              </div>
+            </div>
+            
+            <img id="background-grid" src="\NTE.png" />
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div id="border"></div>
+          </div>
+          <div id="footer">
+            <div id="footer-sections">
+              <div class="footer-section">
+                <h3 class="label">Site Map</h3>
+                <div class="footer-section-items">
+                  <a href="#">Main Menu</a>
+                  <a href="#"></a>
+                  <a href="#"></a>
+                </div>
+              </div>
+            </div>
+            <div id="copyright">
+              <p><b>©2023 Netube Entertainment.</b> This login page was provided by hyperplexed.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    <script src='https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js'></script>
 
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"><link rel="stylesheet" href="loginstyle.css">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" type="text/javascript"></script>
+    <script src="loginscript.js"></script>
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="box-form">
-	<div class="left">
-		<div class="overlay">
-		<h1>NTE ID</h1>
-		<p class="thisiscool">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-		Curabitur et est sed felis aliquet sollicitudin</p>
-		<span>
-			<p>Check some of these links out!</p>
-			<a href="#"><i class="fa fa-youtube" aria-hidden="true"></i> Check out our Youtube!</a>
-			<a href="#"><i class="fa fa-google" aria-hidden="true"></i> Login with Twitter</a>
-		</span>
-		</div>
-	</div>
-	
-<div class="right">
-<h5>Login</h5>
-<p>Don't have an account? <a href="#">Creat Your Account</a> it takes less than a minute</p>
-<form name="login">
-  <div class="login">
-<div class="inputs">
-<input type="text" placeholder="Netube Entertainment ID" name="userid">
-<br>
-<input type="password" placeholder="password" name="pswrd">
-<input type="button" onclick="check(this.form)" value="Login" />
-        
-</form>
-    </div>
-      
-		</div>
-			
-			<br><br>
-			
-		<div class="remember-me--forget-password">
-				<!-- Angular -->
-			<p>forget password?</p>
-		</div>
-			
-			<br>
-	</div>
-	
-</div>
-<!-- partial -->
-  <script src="loginscript.js"></script>
-</body>
+  </body>
 </html>
