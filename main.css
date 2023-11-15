@@ -115,3 +115,11 @@ section p {
 #footer-sections > .footer-section > .footer-section-items > a:is(:hover, :focus) {
   text-decoration: underline; 
 }
+#copyright > p {  
+  color: rgb(255 255 255 / 0.7);
+  font-size: 0.65rem;
+}
+
+#copyright > p b { 
+  color: rgb(255 255 255 / 0.9);
+}
